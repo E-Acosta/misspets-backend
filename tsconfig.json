@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+         "experimentalDecorators": true,
+         "module": "commonjs",
+         "target": "ES5",
+         "sourceMap": true,
+         "removeComments": true,
+         "outDir": "dist",
+         "rootDir": ""
+    },
+    "include": [
+        "src/**/*", "src/index.ts", "Model", "Decorator", "config"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+
+}

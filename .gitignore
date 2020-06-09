@@ -1,0 +1,5 @@
+*.env
+.emv
+/node_modules/
+/dist/
+*-lock.json

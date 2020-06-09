@@ -1,0 +1,28 @@
+{
+    "name": "misspets",
+    "version": "1.0.0",
+    "description": "api para proyecyo de desarrollo de nuevas tecnologias",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsc",
+        "start:dev": "nodemon .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    },
+    "dependencies": {
+        "@types/bcrypt": "^3.0.0",
+        "@types/express": "^4.17.6",
+        "@types/mongoose": "^5.7.23",
+        "bcrypt": "^5.0.0",
+        "body-parser": "^1.19.0",
+        "class-validator": "0.12.2",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.18",
+        "reflect-metadata": "0.1.13"
+    }
+}
