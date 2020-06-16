@@ -1,17 +1,14 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
-import UserController from "../src/user/UserController";
+import UserController from "../src/user/controllers/UserController";
+import PetsController from "../src/user/controllers/PetsController";
 import { RouteDefinition } from "../Model/RouteDefinition";
 let app = express();
 app.use(bodyParser.json());
 app.set("port", 3000);
 
-app.get("/", (req: express.Request, res: express.Response) => {
-  res.send("Hello there!");
-});
-
 // Iterate over all our controllers and register our routes
-[UserController].forEach((controller) => {
+[UserController,PetsController].forEach((controller) => {
   // This is our instantiated class
   const instance = new controller();
   // The prefix saved to our controller
