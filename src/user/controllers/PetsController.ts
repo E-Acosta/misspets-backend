@@ -19,6 +19,7 @@ export default class PetController {
   @Post("/create")
   public createPet(req: Request, res: Response) {
     let data: petStructure = new petStructure(req.body);
+    console.log(req.body)
     if (req.headers.authorization) {
       let token: string = req.headers.authorization.replace("Bearer ", "");
       try {
